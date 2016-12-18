@@ -1,0 +1,21 @@
+/* use Animate.css */
+/* use wow.js */
+
+.a-fadeIn-com {
+  visibility: visible;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-name: fadeInRight;
+}
+
+.a-fadeIn-left {
+  animation-name: fadeInLeft;
+}
+
+.a-fadeIn-up {
+  animation-name: fadeInUp;
+}
+
+.a-fadeIn-right {
+  animation-name: fadeInRight;
+}

@@ -1,0 +1,21 @@
+<% if Rails.env == 'production' %>
+  <%= stylesheet_link_tag assets_path("main.css"), media: 'all' %>
+<% end %>
+
+<!-- A. Browser rendering -->
+<!-- <div id="app" /> -->
+
+<!-- B. Serverside rendering -->
+<%#
+=begin
+%>
+<%= render_react_component('app-ssr.js', serverData: { items: [] }) %>
+<%#
+=end
+%>
+
+<!-- common logic -->
+<% if Rails.env == 'production' %>
+  <%= javascript_include_tag assets_path("vendor.js") %>
+<% end %>
+<%= javascript_include_tag assets_path("main.js") %>

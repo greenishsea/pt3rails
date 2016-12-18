@@ -1,0 +1,43 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset 'UTF-8';
+/* - FILE NAME RULE - omit plural 's' to avoid confusion */
+
+/* 1. Vendors */
+@import 'vendor/_normalize.css';
+// @import 'vendor/bootstrap.css';
+
+/* 2. Variable and helpers */
+@import 'variable/_color.scss';
+@import 'variable/_font.scss';
+@import 'variable/_layout.scss';
+@import 'variable/_path.scss';
+
+/* 3. mixin */
+@import "mixin/_mixin.scss";
+
+/* 4. Base */
+@import 'base/_base.scss';
+@import 'base/_highlight.scss';
+@import 'base/_img.scss';
+@import 'base/_typography.scss';
+@import 'base/_util.scss';
+
+/* 5. Animation */
+@import 'animation/_pulse.scss';
+@import 'animation/_fade-in.scss';
+
+/* 6. Components General */
+@import 'component_general/_button.scss';
+@import 'component_general/_icon.scss';
+
+/* 7. Components Original */
+@import 'component_original/_logo.scss';
+
+/* 8. Components Specific */
+@import 'component_specific/_header-nav.scss';
+@import 'component_specific/_footer.scss';
+@import 'component_specific/_page-home.scss';
+

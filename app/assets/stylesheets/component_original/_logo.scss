@@ -1,0 +1,13 @@
+.logo-main {
+  display: block;
+  height: 60px;
+  width: 140px;
+  margin: 20px 0 0 10px;
+  background-image: url($LOGO_IMG_PATH);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /* 3 props below are for hiding site title string (that is for aria) */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font-family: $text-font-stack;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures, contextual;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+p {
+  font-family: $serif-font-stack;
+  font-size: $font-size-m;
+  line-height: 1.5;
+}
+
+p.large {
+    font-size: $font-size-l;
+}
+
+// ul,
+// ol {
+//     font-size: $font-size-m;
+//     padding-left: 1.75rem;
+// }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-stack;
+    text-transform: uppercase; /* optional */
+    font-weight: 700;
+}

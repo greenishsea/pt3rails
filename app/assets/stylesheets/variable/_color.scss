@@ -1,0 +1,89 @@
+// -----------------------------------------------------
+// Color declaration for deisigning
+//
+// * This is for designing. Not implement these valiables directly.
+//   For implementation, declare valiables following implementaion section.
+// -----------------------------------------------------
+
+/* main branding */
+$brand-primary-color: #f95372; /* like hotpink */
+$brand-secondary-color: #5CB9F2; /* like sky blue */
+$brand-accent-color: #44DB5E; /* like neon light green (fluorescent color) */
+// $brand-sub-accent-color: #xxx;
+$brand-primary-lighter-color: lighten($brand-primary-color, 30%); /* like salmon pink */
+$brand-secondary-darker-color: #23527C; /* like sky blue */
+
+/* black */
+$black: #000;
+
+/* white */
+$white: #FFF;
+
+/* gray (A or B)*/
+// /* -- A. systematic -- */
+// $gray-base:			#000 !default;
+// $gray-darker:		lighten($gray-base, 13.5%) !default; // #222
+// $gray-dark:			lighten($gray-base, 20%) !default;   // #333
+// $gray-mid:				lighten($gray-base, 33.5%) !default; // #555
+// $gray-light:		lighten($gray-base, 46.7%) !default; // #777
+// $gray-lighter:		lighten($gray-base, 93.5%) !default; // #eee
+/* -- B. rough -- */
+$gray-darker: #484848;
+$gray-dark: #666;
+$gray-mid: #999;
+$gray-light: #CCC;
+$gray-lighter: #FAFAFA;
+
+/* others */
+
+
+// -----------------------------------------------------
+// Color declaration for implementation
+//
+// * comment actual value for use of checking directy color in editor.
+// -----------------------------------------------------
+
+/* general purpose */
+$info-color: skyblue; // original
+$success-color: $brand-accent-color; // original
+$warning-color: orange; // original
+$error-color: #FB4F4F; // original
+$danger-color: #E74C3C; // original
+
+/* background */
+$background-color: $white; // #FFF;
+
+/* part */
+$header-background-color: $white; // #FFF
+$header-border-bottom-color: $brand-secondary-color; // #5CB9F2
+$footer-color: $gray-lighter; // #FAFAFA
+
+/* text */
+$text-color: $gray-darker; // #484848
+$text-highlight-color: $brand-primary-lighter-color; //
+
+/* border */
+$main-border-color: $gray-darker; // #484848
+$sub-border-color: $brand-secondary-color; // #5CB9F2
+
+/* button */
+$main-button-color: $brand-primary-color; // #f95372
+$sub-button-color: $brand-accent-color; // #44DB5E
+
+/* link */
+$link-color: $brand-secondary-color; // #5CB9F2
+$link-darker-color: $brand-secondary-darker-color; // #23527c
+
+/* form */
+$form-text-color: $gray-darker; // #484848
+$form-focused-text-color: $gray-dark; // #666
+$form-label-text-color: $gray-mid; // #999
+$form-background-color: $gray-lighter; // #FAFAFA
+
+/* icon */
+$main-icon-color: $gray-darker; // #484848
+$social-icon-common-color: $gray-darker; // #484848
+
+
+/* others */
+$top-text-color: $white; // #FFF

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PickThree3</title>
+    <%= csrf_meta_tags %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Quick trip planning start with PickThree3. Find a lot..">
+
+    <%#<meta property="fb:app_id" content="NNNNNNN">
+    <meta property="og:site_name" content="PickThree3">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pickthree3.herokuapp.com/">
+    <meta property="og:title" content="Quick Planning, Experiences &amp; Places - PickThree3">
+    <meta property="og:description" content="Quick trip planning start with PickThree3. Find a lot.">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:widgets:csp" content="on">
+    <meta name="twitter:url" content="https://pickthree3.herokuapp.com/">
+    <meta name="twitter:description" content="Quick trip planning start with PickThree3. Find a lot..">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Quick Planning, Experiences &amp; Places - PickThree3">
+    <meta name="twitter:site" content="@pickthree3">
+    <meta name="twitter:app:name:iphone" content="PickThree3">
+    <meta name="twitter:app:name:ipad" content="PickThree3">
+    <meta name="twitter:app:name:googleplay" content="PickThree3">
+    <meta name="twitter:app:id:iphone" content="NNNN">
+    <meta name="twitter:app:id:ipad" content="NNNN">
+    <meta name="twitter:app:id:googleplay" content="com.pickThree3.android">
+    <meta name="twitter:app:url:iphone" content="pickThree3://">
+    <meta name="twitter:app:url:ipad" content="pickThree3://">
+    <meta name="twitter:app:url:googleplay" content="pickThree3://">%>
+
+
+    <!-- CSS bootstrap -->
+    <!-- <%= stylesheet_link_tag '/assets/vendor/bootstrap/css/bootstrap.min.css' %> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+    <!-- CSS animation lib -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- analytics script -->
+
+    <!-- favicon -->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+    <%= javascript_include_tag '/assets/vendor/jquery/jquery.min.js' %>
+    <%= javascript_include_tag '/assets/vendor/bootstrap/js/bootstrap.min.js' %>
+
+    <!-- jquery plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- animation lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- bootstrap agency theme related script -->
+    <script src="/assets/javascripts/home/agency.min.js"></script>
+
+    <script>
+      new WOW({
+          mobile: false
+      }).init();
+    </script>
+
+  </body>
+</html>

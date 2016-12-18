@@ -1,0 +1,13 @@
+// caution! pathes should be the relative pathes
+// from the file includes this file. (the file is mostly index.scss)
+$IMG_PATH: '../assets/images/';
+
+$SAMPLE_IMG_PATH: $IMG_PATH + 'samples/';
+$TOP_CONTENT_IMG_PATH: $SAMPLE_IMG_PATH + 'c010-002-preview.jpg';
+
+// $URL_PARTIAL_STORAGE: 'https://s3-ap-northeast-1.amazonaws.com/';
+// $URL_PARTIAL_OWN_DOMAIN: 'pickthree3.herokuapp.com/';
+// $URL_FOR_IMAGE_LOADING: $URL_PARTIAL_STORAGE + $URL_PARTIAL_OWN_DOMAIN + 'assets/images/samples/';
+// $TOP_CONTENT_IMG_PATH: $URL_FOR_IMAGE_LOADING + 'c010-002-preview.jpg';
+
+$LOGO_IMG_PATH: $IMG_PATH + 'logoBlue.svg';

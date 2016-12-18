@@ -1,0 +1,33 @@
+.btn {
+  padding: 0.5em 10px;
+  color: $main-button-color;
+  background-color: $white;
+  border: 1px solid $main-button-color;
+  border-radius: 3px;
+  text-decoration: none;
+  user-select: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:focus,
+.btn:hover,
+.btn.active,
+.btn:active:focus {
+    outline: none;
+}
+
+.btn:hover
+{
+  color: $white;
+  background-color: $main-button-color;
+  opacity: 0.8;
+}
+
+.btn-extra-big {
+    background-color: $brand-primary-lighter-color;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    display: inline;
+}

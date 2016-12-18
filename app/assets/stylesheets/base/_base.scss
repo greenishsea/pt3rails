@@ -1,0 +1,61 @@
+/* This file contains very basic styles. */
+
+/**
+ * Set up a decent box model on the root element
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* for rem */
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: $text-font-stack;
+//   padding-top: $nav-height; /* INFO: commented out for design */
+  background-color: $background-color;
+  overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: none;
+}
+
+a {
+    color: $main-button-color;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.visited {
+    color: darken($main-button-color, 10%);
+}
