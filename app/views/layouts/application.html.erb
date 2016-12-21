@@ -48,6 +48,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- analytics script -->
+    <%= analytics_init if Rails.env.production? %>
 
     <!-- favicon -->
     <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
