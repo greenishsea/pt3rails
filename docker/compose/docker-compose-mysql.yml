@@ -1,0 +1,29 @@
+db:
+  container_name: db
+  build: ${MYSQL_DOCKERFILE_DIR}
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: ${MYSQL_DATABASE}
+    MYSQL_USER: ${MYSQL_USER}
+    MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
+web:
+  container_name: web
+  build: ${WEB_DOCKERFILE_DIR}
+  ports:
+    - "3000:3000"
+    - "1234:1234"
+    - "26162:26162"
+  links:
+    - db:db
+  volumes:
+    - ${WEB_APP_ROOT_DIR}:/usr/src/app/
+  environment:
+    DATABASE_NAME: ${MYSQL_DATABASE}
+    DATABASE_USER: ${MYSQL_USER}
+    DATABASE_PASS: ${MYSQL_PASSWORD}
+    DATABASE_HOST: db
+  command: sh -c "${START_RAILS_COMMAND}"
+

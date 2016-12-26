@@ -1,0 +1,28 @@
+db:
+  container_name: db
+  build: ${POSTGRES_DOCKERFILE_DIR}
+  ports:
+    - "15432:5432"
+  environment:
+    DATABASE_NAME: ${POSTGRES_DATABASE}
+    POSTGRES_USER: ${POSTGRES_USER}
+    POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+web:
+  container_name: web
+  build: ${WEB_DOCKERFILE_DIR}
+  ports:
+    - "3000:3000"
+    - "1234:1234"
+    - "26162:26162"
+  links:
+    - db:db
+  volumes:
+    - ${WEB_APP_ROOT_DIR}:/usr/src/app/
+  environment:
+    DATABASE_NAME: ${POSTGRES_DATABASE}
+    DATABASE_USER: ${POSTGRES_USER}
+    DATABASE_PASS: ${POSTGRES_PASSWORD}
+    DATABASE_HOST: db
+  command: sh -c "${START_RAILS_COMMAND}"
+
