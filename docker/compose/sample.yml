@@ -1,0 +1,42 @@
+# # busybox sample
+# storage:
+#   container_name: db-storage
+#   image: busybox
+#   volumes:
+#       - /var/lib/postgresql/data
+  
+# # ngix sample
+# nginx:
+#   # image: nginx:latest
+#   build: ${NGINX_DOCKERFILE_DIR}
+#   restart: always
+#   ports:
+#     - "80:80"
+#     - "443:443"
+#   links:
+#     - xxx_app:app
+#   volumes:
+#     - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+#     - ./nginx/ssl:/etc/nginx/ssl
+#     - ./nginx/development.conf:/etc/nginx/conf.d/development.conf
+#   volumes_from:
+#     - xxx_app
+
+# # redis sample
+# redis:
+#   image: redis:alpine
+#   container_name: redis
+#   ports: ["6379"]
+#   networks:
+#     - some-tier
+
+# # elasticsearch sample
+# elasticsearch:
+#   image: elasticsearch:1.4.3
+
+# # other parameter sample
+# volumes:
+#   db-data:
+# networks:
+#   aaa-tier:
+#   bbb-tier:
