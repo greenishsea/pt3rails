@@ -51,6 +51,7 @@
     "classnames": "^2.2.5",
     "hypernova": "^1.0.0",
     "hypernova-react-redux": "^1.2.0",
+    "immutable": "^3.8.1",
     "jwt-decode": "^2.1.0",
     "react": "^15.2.1",
     "react-bootstrap": "^0.30.0-rc.2",
