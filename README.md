@@ -22,7 +22,7 @@ Expect to clone pt3react with naming client.
 bundle install
 rails db:migrate
 rails db:seed
-npm install
+yarn install
 git clone [pt3react repo] client
 ```
 
